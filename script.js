@@ -126,7 +126,7 @@ function moveball() {
     ball.x + ball.size < paddle.x + paddle.w &&
     ball.y + ball.size > paddle.y
   ) {
-    ball.speed++;
+    ball.speed = ball.speed + 0.5;
     ball.dy = -ball.speed;
   }
   brick.forEach((column) => {
